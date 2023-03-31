@@ -3292,3 +3292,279 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 3684)
 
 
+Started GET "/tasks" for ::1 at 2023-03-31 14:06:29 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 54ms (Views: 26.9ms | ActiveRecord: 1.5ms | Allocations: 48140)
+
+
+Started GET "/favicon.ico" for ::1 at 2023-03-31 14:06:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/tasks" for ::1 at 2023-03-31 14:09:44 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.3ms | Allocations: 3571)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:09:44 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 24ms (Views: 23.2ms | ActiveRecord: 0.3ms | Allocations: 3557)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:15:51 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 8.9ms | ActiveRecord: 0.7ms | Allocations: 3733)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:15:51 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:18:17 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:18:17 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:19:56 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 7.9ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:19:56 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:7:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:22:58 +0300
+  
+SyntaxError (/home/markpaul/custom-backend/app/controllers/tasks_controller.rb:4: void value expression
+...app.use(function(req, res, next) {
+...                           ^~~~
+):
+  
+app/controllers/tasks_controller.rb:4: void value expression
+app/controllers/tasks_controller.rb:4: void value expression
+Started GET "/tasks" for ::1 at 2023-03-31 14:22:58 +0300
+  
+SyntaxError (/home/markpaul/custom-backend/app/controllers/tasks_controller.rb:4: void value expression
+...app.use(function(req, res, next) {
+...                           ^~~~
+):
+  
+app/controllers/tasks_controller.rb:4: void value expression
+app/controllers/tasks_controller.rb:4: void value expression
+Started GET "/tasks" for ::1 at 2023-03-31 14:28:39 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 30ms (Views: 21.9ms | ActiveRecord: 2.0ms | Allocations: 10692)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:28:39 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.2ms | Allocations: 3572)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:30:38 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:30:38 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:32:38 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:32:38 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:32:42 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:32:42 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:40:20 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 28ms (Views: 13.6ms | ActiveRecord: 1.1ms | Allocations: 46555)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:40:20 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:41:30 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 3572)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 14:41:30 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 16:17:59 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 6.2ms | ActiveRecord: 0.7ms | Allocations: 3734)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 16:17:59 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 16:25:45 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.4ms | Allocations: 3733)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 16:25:45 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:01:03 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.7ms | Allocations: 3717)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:01:03 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:03:34 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:03:35 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms | Allocations: 3572)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:03:40 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.1ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:03:41 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:03:43 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:03:45 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:03:47 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:04:20 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.4ms | Allocations: 3556)
+
+
+Started GET "/tasks" for ::1 at 2023-03-31 17:05:45 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.2ms | Allocations: 3556)
+
+
