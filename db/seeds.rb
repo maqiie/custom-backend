@@ -1,9 +1,10 @@
+
 require 'faker'
 
 # Create users
 5.times do
   User.create(
-    name: Faker::Name.name,
+    username: Faker::Internet.username,
     email: Faker::Internet.email,
     password: 'password'
   )
@@ -28,7 +29,7 @@ categories = Category.create([
     priority: rand(1..5),
     user: User.all.sample,
     category: categories.sample,
-    language: "English"
+    # language: "English"
   )
 end
 

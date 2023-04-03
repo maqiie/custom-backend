@@ -1,63 +1,53 @@
 class TasksController < ApplicationController
+  # before_action :verify_auth
 
+  before_action :set_task, only: [:show, :update, :destroy]
 
+  # GET /tasks
+  def index
+    @tasks = Task.all
+    render json: @tasks
+  end
+
+  # GET /tasks/1
+  def show
+    render json: @task
+  end
+
+  # POST /tasks
+  def create
+    @task = Task.new(task_params)
+  
+    if @task.save
+      render json: @task, status: :created
+    else
+      render json: { errors: @task.errors.full_messages }, status: :unprocessable_entity
+    end
+  end
   
 
-
-    def index
-        @tasks = Task.all
-        render json: @tasks
+  # PATCH/PUT /tasks/1
+  def update
+    if @task.update(task_params)
+      render json: @task
+    else
+      render json: @task.errors, status: :unprocessable_entity
     end
-    
-    def show
-        begin
-          @task = Task.find(params[:id])
-          render json: @task
-        rescue ActiveRecord::RecordNotFound
-          render json: { error: "Task not found" }, status: :not_found
-        end
+  end
+
+  # DELETE /tasks/1
+  def destroy
+    @task.destroy
+  end
+
+  private
+    # Use callbacks to share common setup or constraints between actions.
+    def set_task
+      @task = Task.find(params[:id])
     end
 
-    def create
-        task = Task.new(task_params)
-        if task.save
-          render json: task, status: :created
-        else
-          render json: task.errors, status: :unprocessable_entity
-        end
-      end
-
-    def update
-        task = Task.find(params[:id])
-        if task.update(task_params)
-          render json: task, status: :ok
-        else
-          render json: task.errors, status: :unprocessable_entity
-        end
-      end
-
-
-      def destroy
-        @task = Task.find(params[:id])
-        @task.destroy
-      
-        head :no_content
-      end
-      
-      
-      private
-      
-      def task_params
-        params.require(:task).permit(:name, :description, :due_date, :status, :priority, :user_id, :category_id)
-      end
-      
-      
-    
-    
-    # show (get)
-    #index (get)
-    #description (post)
-    #due_date (post)
-    #status (post)
-    #priority (post)
+    # Only allow a trusted parameter "white list" through.
+    def task_params
+      params.require(:task).permit(:name, :description, :due_date, :status, :priority, :user_id, :category_id)
+    end
 end
