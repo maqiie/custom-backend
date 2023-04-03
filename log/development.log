@@ -4803,3 +4803,125 @@ Processing by TasksController#destroy as HTML
 Completed 204 No Content in 16ms (ActiveRecord: 12.6ms | Allocations: 1753)
 
 
+Started POST "/users/" for ::1 at 2023-04-03 16:27:40 +0300
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"email"=>"mwenda@gmail.com", "username"=>"markpaul", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:60:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "markpaul"], ["email", "mwenda@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-04-03 13:27:40.464235"], ["updated_at", "2023-04-03 13:27:40.464235"]]
+  ↳ app/controllers/users_controller.rb:60:in `create'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:60:in `create'
+Completed 201 Created in 259ms (Views: 0.3ms | ActiveRecord: 5.4ms | Allocations: 16259)
+
+
+Started POST "/users/" for ::1 at 2023-04-03 16:27:42 +0300
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"email"=>"mwenda@gmail.com", "username"=>"markpaul", "password"=>"[FILTERED]"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:60:in `create'
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "markpaul"], ["email", "mwenda@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-04-03 13:27:42.477183"], ["updated_at", "2023-04-03 13:27:42.477183"]]
+  ↳ app/controllers/users_controller.rb:60:in `create'
+  [1m[36mTRANSACTION (12.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:60:in `create'
+Completed 201 Created in 269ms (Views: 0.3ms | ActiveRecord: 12.6ms | Allocations: 1903)
+
+
+Started POST "/users/login" for ::1 at 2023-04-03 16:28:09 +0300
+Processing by UsersController#login as */*
+  Parameters: {"email"=>"mark@gmail.ccom", "password"=>"[FILTERED]", "user"=>{"email"=>"mark@gmail.ccom"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE (username = NULL OR email = 'mark@gmail.ccom') ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:22:in `login'
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 718)
+
+
+Started GET "/tasks" for ::1 at 2023-04-03 16:28:09 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.3ms | Allocations: 3028)
+
+
+Started GET "/tasks" for ::1 at 2023-04-03 16:28:09 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 2982)
+
+
+Started DELETE "/tasks/16" for ::1 at 2023-04-03 16:28:52 +0300
+Processing by TasksController#destroy as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mTask Load (0.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:46:in `set_task'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `destroy'
+  [1m[36mTask Destroy (0.2ms)[0m  [1m[31mDELETE FROM "tasks" WHERE "tasks"."id" = ?[0m  [["id", 16]]
+  ↳ app/controllers/tasks_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (18.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:40:in `destroy'
+Completed 204 No Content in 23ms (ActiveRecord: 19.0ms | Allocations: 1801)
+
+
+Started GET "/tasks" for ::1 at 2023-04-03 16:28:54 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 2823)
+
+
+Started GET "/tasks" for ::1 at 2023-04-03 16:28:54 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 2823)
+
+
+Started PUT "/tasks/21" for ::1 at 2023-04-03 16:29:07 +0300
+Processing by TasksController#update as HTML
+  Parameters: {"status"=>"in progress", "id"=>"21", "task"=>{"status"=>"in progress"}}
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:46:in `set_task'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 805)
+
+
+Started GET "/tasks" for ::1 at 2023-04-03 16:29:15 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 2825)
+
+
+Started GET "/tasks" for ::1 at 2023-04-03 16:29:15 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.2ms | Allocations: 2823)
+
+
+Started POST "/tasks" for ::1 at 2023-04-03 16:29:52 +0300
+Processing by TasksController#create as HTML
+  Parameters: {"name"=>"cooking", "description"=>"make lunch", "due_date"=>"2023-04-04", "status"=>"in progress", "priority"=>"3", "task"=>{"name"=>"cooking", "description"=>"make lunch", "due_date"=>"2023-04-04", "status"=>"in progress", "priority"=>"3"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tasks_controller.rb:21:in `create'
+  [1m[36mTask Create (0.6ms)[0m  [1m[32mINSERT INTO "tasks" ("name", "description", "due_date", "status", "priority", "user_id", "category_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["name", "cooking"], ["description", "make lunch"], ["due_date", "2023-04-04"], ["status", "in progress"], ["priority", 3], ["user_id", nil], ["category_id", nil], ["created_at", "2023-04-03 13:29:52.561926"], ["updated_at", "2023-04-03 13:29:52.561926"]]
+  ↳ app/controllers/tasks_controller.rb:21:in `create'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tasks_controller.rb:21:in `create'
+Completed 201 Created in 11ms (Views: 0.3ms | ActiveRecord: 6.1ms | Allocations: 1883)
+
+
+Started GET "/tasks" for ::1 at 2023-04-03 16:37:08 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.7ms | Allocations: 3140)
+
+
+Started GET "/tasks" for ::1 at 2023-04-03 16:37:08 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 2980)
+
+
