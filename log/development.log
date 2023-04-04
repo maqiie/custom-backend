@@ -5258,3 +5258,17 @@ Processing by TasksController#index as HTML
 Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.2ms | Allocations: 1239)
 
 
+Started GET "/tasks" for ::1 at 2023-04-04 15:07:49 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.8ms | Allocations: 1399)
+
+
+Started GET "/tasks" for ::1 at 2023-04-04 15:07:49 +0300
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (1.1ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks"[0m
+  ↳ app/controllers/tasks_controller.rb:9:in `index'
+Completed 200 OK in 11ms (Views: 9.5ms | ActiveRecord: 1.1ms | Allocations: 1239)
+
+
